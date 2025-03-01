@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Board Stats</title>
+
+    <!-- Tailwind CSS and Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header class="pt-4">
+        <nav
+          class="container mx-auto bg-white p-4 rounded-md flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-blue-600 rounded-r-xl relative">
+              <div>
+                <img src="./assets/logo.png" alt="Logo" />
+              </div>
+            </div>
+  
+            <h1 class="text-3xl text-gray-800 ml-2">
+              Dev<span class="font-extrabold">Board</span>
+            </h1>
+          </div>
+  
+          <!-- Right Side -->
+          <div class="p-2">
+            <button id="back-btn">Back to Desk</button>
+          </div>
+        </nav>
+      </header>
+</body>
+</html>
