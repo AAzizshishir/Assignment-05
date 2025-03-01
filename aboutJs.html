@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developer Board Stats</title>
 
     <!-- Tailwind CSS and Daisy UI CDN -->
@@ -20,31 +20,72 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+  <body class="font-[Poppins] bg-gray-200">
     <!-- Header -->
     <header class="pt-4">
-        <nav
-          class="container mx-auto bg-white p-4 rounded-md flex items-center justify-between"
-        >
-          <!-- Logo -->
-          <div class="flex items-center">
-            <div class="w-12 h-12 bg-blue-600 rounded-r-xl relative">
-              <div>
-                <img src="./assets/logo.png" alt="Logo" />
-              </div>
+      <nav
+        class="container mx-auto bg-white p-4 rounded-md flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-blue-600 rounded-r-xl relative">
+            <div>
+              <img src="./assets/logo.png" alt="Logo" />
             </div>
-  
-            <h1 class="text-3xl text-gray-800 ml-2">
-              Dev<span class="font-extrabold">Board</span>
-            </h1>
           </div>
-  
-          <!-- Right Side -->
-          <div class="p-2">
-            <button id="back-btn">Back to Desk</button>
-          </div>
-        </nav>
-      </header>
-</body>
+
+          <h1 class="text-3xl text-gray-800 ml-2">
+            Dev<span class="font-extrabold">Board</span>
+          </h1>
+        </div>
+
+        <!-- Right Side -->
+        <div>
+          <button id="back-btn" class="btn bg-blue-600 text-white">
+            Back to Desk
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <section class="container mx-auto space-y-4">
+        <h2 class="text-2xl font-bold my-4 text-center">Blogs</h2>
+        <div class="bg-white rounded-md p-4">
+          <h1
+            class="text-xl font-semibold py-2 border-b border-gray-400 border-dashed"
+          >
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h1>
+          <p class="mt-2">
+            There are various ways to select element in the dom.
+            1.getElementById, 2.getElementsByClassName, 3.getElementsByTagName,
+            4.querySelector, 5.querySelectorAll.
+          </p>
+        </div>
+        <div class="bg-white rounded-md p-4">
+            <h1 class="text-xl font-semibold py-2 border-b border-gray-400 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <p class="mt-2">innerHTML is return HTML element.innerText return inside text from html elements and textContent return node including text,white space.  </p>
+        </div>
+        <div class="bg-white rounded-md p-4">
+            <h1 class="text-xl font-semibold py-2 border-b border-gray-400 border-dashed">Question-3: What is event delegation in the DOM?</h1>
+            <p class="mt-2"></p>
+        </div>
+        <div class="bg-white rounded-md p-4">
+            <h1 class="text-xl font-semibold py-2 border-b border-gray-400 border-dashed"></h1>
+            <p class="mt-2"></p>
+        </div>
+        <div class="bg-white rounded-md p-4">
+            <h1 class="text-xl font-semibold py-2 border-b border-gray-400 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <p class="mt-2">1.document.createElement 2.append or appentChild 3. remove()</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
