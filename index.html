@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Board Stats</title>
+
+    <!-- Tailwind CSS and Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Poppins] bg-gray-200 h-screen">
+    <!-- Header -->
+    <header class="pt-4">
+      <nav
+        class="container mx-auto bg-white p-4 rounded-md flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-blue-600 rounded-r-xl relative">
+            <div>
+              <img src="./assets/logo.png" alt="Logo" />
+            </div>
+          </div>
+
+          <h1 class="text-3xl text-gray-800 ml-2">
+            Dev<span class="font-extrabold">Board</span>
+          </h1>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-3">
+          <div
+            class="bg-gray-100 rounded-full flex items-center justify-center gap-2 px-4 py-4 text-3xl"
+          >
+            <div>
+              <img src="./assets/checkbox.png" />
+            </div>
+            <div id="total-task" class="font-bold">23</div>
+          </div>
+          <div class="rounded-full bg-gray-100 p-4">
+            <div
+              id="bg-change-btn"
+              class="size-10 rounded-fullcursor-pointer"
+            >
+        <img src="./assets/theme-btn.png"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto grid gap-4">
+      <!-- Top Section -->
+      <section class="flex gap-4 mt-4 border-b-2 border-gray-200 border-dashed bg-white p-4">
+        <!-- Box-1 -->
+        <div class="bg-gray-100 p-3 rounded-md flex items-center gap-3">
+          <div class="text-blue-600 rounded-full p-3 bg-white">
+           <img src="./assets/checkbox.png">
+          </div>
+          <div>
+            <h6 class="text-gray-600 font-semibold">Task Assigned</h6>
+            <span id="incompleted task" class="font-bold text-xl">06</span>
+          </div>
+        </div>
+        <!-- Box-2 -->
+        <div
+          id="question-container"
+          class="bg-linear-to-r from-blue-600 to-blue-300 rounded-md flex items-center gap-3 flex-1"
+        >
+          <div class="p-2">
+            <img src="./assets/board.png">
+          </div>
+          <h2 class="font-semibold text-white text-xl">Discover Something New Today!</h2>
+        </div>
+        <!-- Box-3 -->
+        <div class="bg-gray-100 p-3 rounded-md flex items-center gap-3">
+            <div class="text-blue-600 rounded-full p-3 bg-white">
+             <img src="./assets/calender.png">
+            </div>
+            <div>
+              <h6 class="text-gray-600 font-semibold">Wed,</h6>
+              <span id="date" class="font-bold text-xl">28 Jul 2025</span>
+            </div>
+          </div>
+      </section>
+
+      <!-- Main Content -->
+       <section class="grid grid-cols-3 bg-white p-4 pb-6">
+            <div class="bg-gray-100 p-3 rounded-xl">
+                <span class="bg-white p-2 rounded-md text-slate-700">ShopEase</span>
+                <h2 class="font-medium text-2xl text-slate-700">Fix Mobile Button Issue </h2>
+                <p class="bg-white p-2 text-slate-500 rounded-md">Debug using Chrome DevTools, check for overlapping ... </p>
+                <!-- <span>elements, and ensure onClick works properly
+                    and ensure onClick works properly</span> -->
+
+                
+            </div>
+       </section>
+    </main>
+  </body>
+</html>
