@@ -3,7 +3,6 @@ const completeButtons = document.querySelectorAll(".complete-btn");
 const incompleteTask = document.getElementById("incompleted task");
 const totalTask = document.getElementById("total-task");
 const changeTheme = document.getElementById("bg-change-btn");
-console.log(questionContainer.textContent);
 
 questionContainer.addEventListener("click", function () {
   window.location = "../aboutJs.html";
