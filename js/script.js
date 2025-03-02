@@ -5,7 +5,7 @@ const totalTask = document.getElementById("total-task");
 const changeTheme = document.getElementById("bg-change-btn");
 
 questionContainer.addEventListener("click", function () {
-  window.location = "../about.html";
+  window.location.href = "../about.html";
 });
 let incompletedTask = 6;
 let completedTask = 0;
