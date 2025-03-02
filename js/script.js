@@ -5,7 +5,7 @@ const totalTask = document.getElementById("total-task");
 const changeTheme = document.getElementById("bg-change-btn");
 
 questionContainer.addEventListener("click", function () {
-  window.location = "../aboutJs.html";
+  window.location.href = "../aboutJs.html";
 });
 let incompletedTask = 6;
 let completedTask = 0;
@@ -27,7 +27,7 @@ for (const completeBtn of completeButtons) {
     const parentDiv = completeBtn.parentElement;
     const grandPararent = parentDiv.parentElement;
     const heading = grandPararent.querySelector(".heading").innerText;
-    
+
     const currentTime = new Date().toLocaleTimeString();
     let para = document.createElement("p");
     para.classList.add("p-2", "my-2", "bg-gray-100", "rounded-md");
@@ -42,18 +42,18 @@ for (const completeBtn of completeButtons) {
   });
 }
 
-function randomColor(){
+function randomColor() {
   let letters = "0123456789ABCDEF";
   let color = "#";
-  for(let i = 0; i < 6; i++){
+  for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
 }
 
-changeTheme.addEventListener("click", function(){
+changeTheme.addEventListener("click", function () {
   document.body.style.backgroundColor = randomColor();
-})
+});
 
 const date = document.getElementById("date");
 const newDate = new Date().toDateString();
