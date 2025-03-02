@@ -48,11 +48,15 @@
             <div>
               <img src="./assets/checkbox.png" />
             </div>
-            <div id="total-task" class="font-bold">23</div>
+            <div id="total-task" class="font-bold">0</div>
           </div>
           <div class="rounded-full bg-gray-100 p-4">
-            <div id="bg-change-btn" class="size-10 rounded-fullcursor-pointer">
-              <img src="./assets/theme-btn.png" />
+            <div class="size-10 rounded-fullcursor-pointer">
+              <img
+                id="bg-change-btn"
+                class="cursor-pointer"
+                src="./assets/theme-btn.png"
+              />
             </div>
           </div>
         </div>
@@ -60,7 +64,7 @@
     </header>
 
     <main class="container mx-auto flex gap-4">
-      <section class="bg-white p-4 pb-6 rounded-md mt-4">
+      <section class="bg-white p-4 pb-6 rounded-md mt-4 w-10/12">
         <!-- Top Section -->
         <div
           class="flex gap-4 mt-4 border-b-2 border-gray-200 border-dashed pb-6"
@@ -89,189 +93,170 @@
           </div>
           <!-- Box-3 -->
           <div class="bg-gray-100 p-3 rounded-md flex items-center">
-            <div class="text-blue-600 rounded-full p-3 bg-white">
+            <div class="text-blue-600 rounded-full p-3 bg-white mr-2">
               <img src="./assets/calender.png" />
             </div>
-            <div>
-              <h6 class="text-gray-600 font-semibold">Wed,</h6>
-              <span id="date" class="font-bold text-xl">28 Jul 2025</span>
-            </div>
+            <div id="date"></div>
           </div>
         </div>
 
         <!-- Main Content -->
-        <div class="grid grid-cols-3 gap-8 mt-6">
-          <div class="bg-gray-100 p-6 rounded-xl">
+        <div class="grid grid-cols-3 gap-5 mt-6">
+          <div class="bg-gray-100 p-3 rounded-xl">
             <span class="bg-white p-2 rounded-md text-slate-700">ShopEase</span>
-            <h2 class="font-medium text-xl text-slate-700 my-4">
+            <h2 class="font-medium text-lg text-slate-700 my-4 heading">
               Fix Mobile Button Issue
             </h2>
             <p class="bg-white p-2 text-slate-500 rounded-md mb-4">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
-            <!-- <span>elements, and ensure onClick works properly
-                    and ensure onClick works properly</span> -->
-
             <div class="flex items-end justify-between">
               <div>
                 <span class="text-slate-400">Deadline</span>
                 <p class="font-medium text-slate-700">21 March 2025</p>
               </div>
-              <div>
-                <button
-                  class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
-                >
-                  Completed
-                </button>
-              </div>
+              <button
+                class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
+              >
+                Completed
+              </button>
             </div>
           </div>
-          <div class="bg-gray-100 p-6 rounded-xl">
-            <span class="bg-white p-2 rounded-md text-slate-700">CloudSync</span>
-            <h2 class="font-medium text-xl text-slate-700 my-4">
+          <div class="bg-gray-100 p-3 rounded-xl">
+            <span class="bg-white p-2 rounded-md text-slate-700"
+              >CloudSync</span
+            >
+            <h2 class="font-medium text-lg text-slate-700 my-4 heading">
               Add Dark Mode
             </h2>
             <p class="bg-white p-2 text-slate-500 rounded-md mb-4">
-                Store the user's preference in localStorage, update CSS variables dynamically...
+              Debug using Chrome DevTools, check for overlapping elements...
             </p>
-            <!-- <span>elements, and ensure onClick works properly
-                    and ensure onClick works properly</span> -->
 
             <div class="flex items-end justify-between">
               <div>
                 <span class="text-slate-400">Deadline</span>
                 <p class="font-medium text-slate-700">21 March 2025</p>
               </div>
-              <div>
-                <button
-                  class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
-                >
-                  Completed
-                </button>
-              </div>
+              <button
+                class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
+              >
+                Completed
+              </button>
             </div>
           </div>
-          <div class="bg-gray-100 p-6 rounded-xl">
+          <div class="bg-gray-100 p-3 rounded-xl">
             <span class="bg-white p-2 rounded-md text-slate-700">SwiftPay</span>
-            <h2 class="font-medium text-xl text-slate-700 my-4">
-                Optimize  Home page
+            <h2 class="font-medium text-lg text-slate-700 my-4 heading">
+              Optimize Home page
             </h2>
             <p class="bg-white p-2 text-slate-500 rounded-md mb-4">
-                Debug using Chrome DevTools, check for overlapping elements...
+              Debug using Chrome DevTools, check for overlapping elements...
             </p>
-            <!-- <span>elements, and ensure onClick works properly
-                    and ensure onClick works properly</span> -->
 
             <div class="flex items-end justify-between">
               <div>
                 <span class="text-slate-400">Deadline</span>
                 <p class="font-medium text-slate-700">21 March 2025</p>
               </div>
-              <div>
-                <button
-                  class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
-                >
-                  Completed
-                </button>
-              </div>
+              <button
+                class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
+              >
+                Completed
+              </button>
             </div>
           </div>
-          <div class="bg-gray-100 p-6 rounded-xl">
+          <div class="bg-gray-100 p-3 rounded-xl">
             <span class="bg-white p-2 rounded-md text-slate-700">Meta</span>
-            <h2 class="font-medium text-xl text-slate-700 my-4">
-                Add new emoji 🤲
+            <h2 class="font-medium text-lg text-slate-700 my-4 heading">
+              Add new emoji 🤲
             </h2>
             <p class="bg-white p-2 text-slate-500 rounded-md mb-4">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
-            <!-- <span>elements, and ensure onClick works properly
-                    and ensure onClick works properly</span> -->
 
             <div class="flex items-end justify-between">
               <div>
                 <span class="text-slate-400">Deadline</span>
                 <p class="font-medium text-slate-700">21 March 2025</p>
               </div>
-              <div>
-                <button
-                  class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
-                >
-                  Completed
-                </button>
-              </div>
+              <button
+                class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
+              >
+                Completed
+              </button>
             </div>
           </div>
-          <div class="bg-gray-100 p-6 rounded-xl">
-            <span class="bg-white p-2 rounded-md text-slate-700">Google LLC</span>
-            <h2 class="font-medium text-xl text-slate-700 my-4">
-                Integrate OpenAI API 
+          <div class="bg-gray-100 p-3 rounded-xl">
+            <span class="bg-white p-2 rounded-md text-slate-700"
+              >Google LLC</span
+            >
+            <h2 class="font-medium text-lg text-slate-700 my-4 heading">
+              Integrate OpenAI API
             </h2>
             <p class="bg-white p-2 text-slate-500 rounded-md mb-4">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
-            <!-- <span>elements, and ensure onClick works properly
-                    and ensure onClick works properly</span> -->
 
             <div class="flex items-end justify-between">
               <div>
                 <span class="text-slate-400">Deadline</span>
                 <p class="font-medium text-slate-700">21 March 2025</p>
               </div>
-              <div>
-                <button
-                  class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
-                >
-                  Completed
-                </button>
-              </div>
+              <button
+                class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
+              >
+                Completed
+              </button>
             </div>
           </div>
-          <div class="bg-gray-100 p-6 rounded-xl">
-            <span class="bg-white p-2 rounded-md text-slate-700">Glassdoar</span>
-            <h2 class="font-medium text-xl text-slate-700 my-4">
-                Improve Job searching 
+          <div class="bg-gray-100 p-3 rounded-xl">
+            <span class="bg-white p-2 rounded-md text-slate-700"
+              >Glassdoar</span
+            >
+            <h2 class="font-medium text-lg text-slate-700 my-4 heading">
+              Improve Job searching
             </h2>
             <p class="bg-white p-2 text-slate-500 rounded-md mb-4">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
-            <!-- <span>elements, and ensure onClick works properly
-                    and ensure onClick works properly</span> -->
 
             <div class="flex items-end justify-between">
               <div>
                 <span class="text-slate-400">Deadline</span>
                 <p class="font-medium text-slate-700">21 March 2025</p>
               </div>
-              <div>
-                <button
-                  class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
-                >
-                  Completed
-                </button>
-              </div>
+              <button
+                class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium complete-btn"
+              >
+                Completed
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       <!-- sidebar -->
-      <aside class="bg-white mt-4 p-6 rounded-md w-[380px] text-center">
-        <div class="flex items-center gap-2 mb-6 ml-4">
-          <img src="./assets/activity.png" />
-          <p class="space-x-2 font-medium text-slate-500">Activity Log</p>
+      <aside class="bg-white mt-4 p-3 rounded-md w-3/12 text-center">
+        <div class="border-b pb-3 w-full border-dashed border-gray-400">
+          <div class="flex items-center justify-center gap-2 mt-3 mb-6">
+            <img src="./assets/activity.png" />
+            <p class="font-medium text-slate-500">Activity Log</p>
+          </div>
+          <div>
+            <button
+              id="history-btn"
+              class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium"
+            >
+              Clear History
+            </button>
+          </div>
         </div>
-        <div>
-          <button
-            id="history-btn"
-            class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700 transition cursor-pointer font-medium"
-          >
-            Clear History
-          </button>
-        </div>
+        <div id="history" class="mt-3 text-left"></div>
       </aside>
     </main>
 
     <!-- JavaScript -->
-     <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
